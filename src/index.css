@@ -1,0 +1,15 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+:root{color-scheme:dark}
+body{@apply bg-bg text-ink antialiased overflow-x-hidden;background-image:radial-gradient(1000px 500px at 85% -10%,rgba(167,139,250,.13),transparent),radial-gradient(800px 500px at 0 100%,rgba(34,211,238,.08),transparent),radial-gradient(1px 1px at 20px 30px,rgba(255,255,255,.35),transparent),radial-gradient(1px 1px at 95px 85px,rgba(255,255,255,.25),transparent);background-size:auto,auto,140px 140px,210px 210px;background-attachment:fixed}
+.card{@apply bg-card border border-line rounded-2xl p-4}
+.btn{@apply px-3 py-1.5 rounded-lg bg-elev border border-line text-sm hover:border-cyan transition-colors inline-flex items-center gap-1.5}
+.btn-p{@apply bg-cyan text-bg font-medium border-transparent hover:opacity-90}
+.inp{@apply bg-bg2 border border-line rounded-lg px-3 py-2 text-sm w-full outline-none focus:border-cyan}
+.chk{@apply shrink-0 w-6 h-6 rounded-full border-2 border-mute grid place-items-center transition-all hover:border-cyan}
+.chk[aria-checked=true]{@apply bg-cyan border-cyan text-bg shadow-[0_0_10px_rgba(34,211,238,.45)]}
+.row{@apply flex items-center gap-3 px-3 py-2.5 rounded-xl bg-bg2/70 border border-line transition-all}
+.h{@apply text-xs uppercase tracking-widest text-mute mb-3}
+.nav{@apply flex items-center gap-3 px-3 py-2 rounded-lg text-mute hover:text-ink hover:bg-elev/60 w-full text-left}
+.nav[aria-current=page]{@apply text-cyan bg-elev shadow-[inset_2px_0_0_#22D3EE]}
+:focus-visible{outline:2px solid #22D3EE;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
